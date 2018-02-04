@@ -34,7 +34,7 @@
 
 config.log
 config.status
-
+.DS_Store
 
 
 
