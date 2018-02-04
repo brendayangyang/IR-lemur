@@ -1,5 +1,8 @@
 #!/bin/sh
 
+#clean up index
+rm eval_data_* result_*
+
 #build_param index (no stem, have stop words)
 ../app/obj/BuildIndex build_param database.sgml
 
@@ -27,10 +30,6 @@
 ../app/obj/RetrievalEval eval_rawtf_stemmed_krovetz_nostopw_param query_stemmed_nostopw
 
 
-../trec_eval qrel result_rawtf
-../trec_eval qrel result_rawtf_nostopw
-../trec_eval qrel result_rawtf_stemmed_nostopw
-../trec_eval qrel result_rawtf_stemmed_krovetz_nostopw
 
 
 
