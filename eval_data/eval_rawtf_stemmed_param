@@ -1,7 +1,7 @@
 <parameters>
-<index>eval_data_stemmed_krovetz_nostopw_index.ifp</index>
+<index>eval_data_stemmed_index.ifp</index>
 <query>query</query>
 <weightScheme>RawTF</weightScheme>
-<result>result_rawtf_stemmed_krovetz_nostopw</result>
+<result>result_rawtf_stemmed</result>
 <resultCount>100</resultCount>
 </parameters>
