@@ -32,11 +32,9 @@
 *.app
 
 
-Makefile
-MakeDefns
 config.log
 config.status
-Makefile.app
+
 
 
 
