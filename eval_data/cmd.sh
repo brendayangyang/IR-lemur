@@ -21,7 +21,7 @@
 
 
 #evaluate porter stem, no stopw using rawtf
-../app/obj/RetrievalEval eval_rawtf_stemmed_nostopw_param query_stemmed_nostopw
+../app/obj/RetrievalEval eval_rawtf_stemmed_nostopw_param query
 
 #evaluate krovetz stem no stopw
 ../app/obj/RetrievalEval eval_rawtf_stemmed_krovetz_nostopw_param query_stemmed_nostopw
