@@ -43,4 +43,42 @@ rm eval_data_* result_*
 ../app/obj/RetrievalEval eval_rawtf_stemmed_param query
 
 
+#evaluate no stem no stop words using rawtfidf
+../app/obj/RetrievalEval eval_rawtfidf_nostopw_param query
+
+#evaluate no stem have stop words using rawtfidf
+../app/obj/RetrievalEval eval_rawtfidf_param query
+
+#evaluate porter stemmer no stopw using rawtfidf
+../app/obj/RetrievalEval eval_rawtfidf_stemmed_nostopw_param query
+
+#evaluate porter stemmer have stopw using rawtfidf
+../app/obj/RetrievalEval eval_rawtfidf_stemmed_param query
+
+
+#evaluate no stem no stop words using logtfidf
+../app/obj/RetrievalEval eval_logtfidf_nostopw_param query
+
+#evaluate no stem have stop words using logtfidf
+../app/obj/RetrievalEval eval_logtfidf_param query
+
+#evaluate porter stemmer no stopw using logtfidf
+../app/obj/RetrievalEval eval_logtfidf_stemmed_nostopw_param query
+
+#evaluate porter stemmer have stopw using logtfidf
+../app/obj/RetrievalEval eval_logtfidf_stemmed_param query
+
+
+#evaluate no stem no stop words using okapi
+../app/obj/RetrievalEval eval_okapi_nostopw_param query
+
+#evaluate no stem have stop words using okapi
+../app/obj/RetrievalEval eval_okapi_param query
+
+#evaluate porter stemmer no stopw using okapi
+../app/obj/RetrievalEval eval_okapi_stemmed_nostopw_param query
+
+#evaluate porter stemmer have stopw using okapi
+../app/obj/RetrievalEval eval_okapi_stemmed_param query
+
 

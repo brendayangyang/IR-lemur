@@ -1,0 +1,7 @@
+<parameters>
+<index>eval_data_stemmed_nostopw_index.ifp</index>
+<query>query</query>
+<weightScheme>LogTFIDF</weightScheme>
+<result>result_logtfidf_stemmed_nostopw</result>
+<resultCount>100</resultCount>
+</parameters>

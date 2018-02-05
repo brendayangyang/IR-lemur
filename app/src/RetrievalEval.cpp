@@ -73,6 +73,7 @@ double computeRawTFIDFWeight(int docID,
 		     Index *ind)
 {
   /*!!!!! Implement raw TF and IDF weighting scheme !!!!!*/
+  return docTermFreq * log2(ind->docCount() * 1.0 / ind->docCount(termID)) * qryTermWeight;
 }
 
 
@@ -84,6 +85,7 @@ double computeLogTFIDFWeight(int docID,
 		     Index *ind)
 {
   /*!!!!! Implement log TF and IDF weighting scheme !!!!!*/
+  return (log2(docTermFreq) + 1) * log2(ind->docCount() * 1.0 / ind->docCount(termID)) * qryTermWeight;
 }
 
 // compute the weight of a matched term
@@ -94,6 +96,10 @@ double computeOkapiWeight(int docID,
 		     Index *ind)
 {
   /*!!!!! Implement Okapi weighting scheme !!!!!*/
+  return docTermFreq /（docTermFreq + 0.5 + 1.5 * ind->docLength(docID) / ind->docLengthAvg()）
+    * log2((ind->docCount() - ind->docCount(termID) + 0.5) / (ind->docCount(termID) + 0.5)) 
+    * ((8 + qryTermWeight) / (7 + qryTermWeight));
+
 }
 
 
