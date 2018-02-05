@@ -96,8 +96,8 @@ double computeOkapiWeight(int docID,
 		     Index *ind)
 {
   /*!!!!! Implement Okapi weighting scheme !!!!!*/
-  return docTermFreq /（docTermFreq + 0.5 + 1.5 * ind->docLength(docID) / ind->docLengthAvg()）
-    * log2((ind->docCount() - ind->docCount(termID) + 0.5) / (ind->docCount(termID) + 0.5)) 
+  return (docTermFreq / (docTermFreq + 0.5 + 1.5 * ind->docLength(docID) / ind-> docLengthAvg()))
+    * log2((ind->docCount() - ind->docCount(termID) + 0.5) / (ind->docCount(termID) + 0.5))
     * ((8 + qryTermWeight) / (7 + qryTermWeight));
 
 }
